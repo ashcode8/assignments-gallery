@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonebook</title>
+    <link href="./style.css" rel="stylesheet" />
+
+    <!--following use of bootstrap only limited to search bar on top, no other element uses bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
+  
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+        </head>
+  <body>
+    <header id="intro-text">
+      <h1  style="font-size:48px;color:rgb(253, 238, 23)">Welcome To Your Phonebook 📖 (A-Z)</h1>
+    </header>
+    <header id="search-bar"> <!--Bootstrap search bar used-->
+      <div class="container bootstrap snippets bootdey">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body p-t-0">
+                        <div class="input-group">
+                            <input type="text" id="example-input1-group2" name="example-input1-group2" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-effect-ripple btn-primary"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav style=" color: #fff; font: bold 18px/21px Helvetica, Arial, sans-serif; 
+                font-family: 'Lato', sans-serif;
+                font-weight: 300">
+      <a href="#home">Top</a>
+      <a href="#news">All Contacts</a>
+      <a href="#contact">Check Recent Calls</a>
+    </nav>
+    <main>
+      <aside>
+        <div class="disable-modal" id="newContactSection">
+          <h2>Add New Contact</h2>
+          <label for="newPersonName">Name</label>
+          <input type="text" id="newPersonName" />
+    
+          <label for="newPersonPhone">Phone</label>
+          <input type="text" id="newPersonPhone" />
+    
+          <label for="newPersonAddress">Address</label>
+          <input type="text" id="newPersonAddress" />
+    
+          <button id="newContactCancel" >Cancel</button>
+          <button id="newContactSubmit">Submit</button>
+        </div>
+      </aside>
+      <section id="contact-desc-list">
+        <div>
+          <p class="letter-head">A</p>
+          <li>
+            Avinash Dahiya
+            <div class="box">
+              <div><img src="contact-photo/1.jpg" class="img-avatar" /></div>
+              <div>
+                <a style="display: block; color: white" href="mailto:avi46@gmail.com"
+                  >📧 av6@gmail.com</a
+                >
+                <a href="tel:+1312446789" style="color: white;">📞 (611) 777-3128</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            Airtel
+            <div class="box">
+              <div><img src="contact-photo/2.jpg" class="img-avatar" /></div>
+              <div>
+                <a style="display: block; color: white" href="mailto:klen@rock.com"
+                  >📧 klein@rock.com</a
+                >
+                <a href="tel:+13115552368" style="color: white;">📞 (311) 444-09878</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            Asha Bhosle
+            <div class="box">
+              <div><img src="contact-photo/3.jpg" class="img-avatar" /></div>
+              <div>
+                <a style="display: block; color: white" href="mailto:jim@rock.com"
+                  >📧 yu7@kit.com</a
+                >
+                <a href="tel:+13115552368" style="color: white;">📞 (911) 555-1468</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            Attwood Movers
+            <div class="box">
+              <div><img src="contact-photo/4.jpg" class="img-avatar" /></div>
+              <div>
+                <a style="display: block; color: white" href="mailto:jim@rock.com"
+                  >📧 jim@rock.com</a
+                >
+                <a href="tel:+13115552368" style="color: white;">📞 (311) 555-2368</a>
+              </div>
+            </div>
+          </li>
+          <li>Alok Nath</li>
+        </div>
+        <div>
+          <p class="letter-head">B</p>
+          <li>
+            Bigy Bigy Burger
+            <div class="box">
+              <div><img src="contact-photo/5.jpg" class="img-avatar" /></div>
+              <div>
+                <a style="display: block; color: white" href="mailto:jim@rock.com"
+                  >📧 jim@rock.com</a
+                >
+                <a href="tel:+13115552368" style="color: white;">📞 (311) 555-2368</a>
+              </div>
+            </div>
+          </li>
+          <li>Bronxton Lake</li>
+          <li>
+            Betty White
+            <div class="box">
+              <div><img src="contact-photo/6.jpg" class="img-avatar" /></div>
+              <div>
+                <a style="display: block" href="mailto:jim@rock.com"
+                  >📧 jim@rock.com</a
+                >
+                <a href="tel:+13115552368">📞 (311) 555-2368</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            Bhabi Ji
+            <div class="box">
+              <div><img src="contact-photo/7.jpg" class="img-avatar" /></div>
+              <div>
+                <a style="display: block" href="mailto:jim@rock.com"
+                  >📧 jim@rock.com</a
+                >
+                <a href="tel:+13115552368">📞 (311) 555-2368</a>
+              </div>
+            </div>
+          </li>
+          <li>BigBrother</li>
+        </div>
+        <div>
+          <p class="letter-head">C</p>
+          <li>Chromeo</li>
+          <li>Common</li>
+          <li>Converge</li>
+          <li>Crystal Castles</li>
+          <li>Cursive</li>
+        </div>
+        <div>
+          <p class="letter-head">D</p>
+          <li>Destruction In The Sky</li>
+          <li>Dhankar Aunty</li>
+          <li>DogHouse</li>
+          <li>Dig Yello Door</li>
+        </div>
+        <div>
+          <p>E</p>
+          <li>ExxByte Systems</li>
+          <li>Editch Wells</li>
+          <li>Eetawa wali Aunty</li>
+          <li>Edward Daruwala</li>
+        </div>
+        <div>
+          <p>H</p>
+          <li>Hemant</li>
+          <li>Hansika</li>
+          <li>Hansraj College</li>
+          <li>Hathi Waka</li>
+        </div>
+        <div>
+          <p>I</p>
+          <li>Ishita Singhal</li>
+          <li>Ishant Sharma</li>
+        </div>
+        <div>
+          <p>J</p>
+          <li>Jagga Daaku</li>
+        </div>
+        <div>
+          <p>K</p>
+          <li>Ke se Kisi ko nahi janta</li>
+          <li>Kakkar Maam</li>
+          <li>Keventers Milkshakes</li>
+          <li>Krystal Sharma</li>
+        </div>
+        <div>
+          <p>T</p>
+          <li>Tripathi Gunda &amp; Aur Chamche</li>
+          <li>T-Bonen</li>
+          <li>Taza Mutton</li>
+          <li>Tamsic Bhojan</li>
+          <li>The Gallery</li>
+        </div>
+        <div>
+          <p>V</p>
+          <li>VanDam Bam</li>
+          <li>Vishakha Enterprises</li>
+          <li>VasuDev</li>
+          <li>Vayu Devta</li>
+          <li>Vikings</li>
+        </div>
+        <div>
+          <p>Z</p>
+          <li>Zainab Shah</li>
+          <li>Zaheer Khan</li>
+          <li>ZZZ.. Feeling Sleepy</li>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>End Of Contact List 🔚</h2>
+    </footer>   
+  </body>
+</html>
